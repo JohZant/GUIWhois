@@ -18,6 +18,10 @@ public class GUIWhois extends JavaPlugin {
 
         messageService = new MessageService(this);
         messageService.messageConsole("MessageService Active");
+
+
+        //setup commands
+        this.getCommand("guiwhois").setExecutor(new GUIWhoisCommands(this));
     }
 
     @Override
