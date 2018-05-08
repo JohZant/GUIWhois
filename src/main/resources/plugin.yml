@@ -1,3 +1,10 @@
 name: GUIWhois
-version: ${project.version}
+version: 0.0.2
+auther: JohZant
 main: com.arch.guiwhois.GUIWhois
+
+commands:
+   guiwhois:
+      description: GUIWhois Base Command
+      alias: [gw, whois]
+      permission: guiwhois.use
