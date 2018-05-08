@@ -25,7 +25,7 @@ public class GUIWhoisCommands implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (args.length == 0) {
+        if (args.length == 0 || args[0].equalsIgnoreCase("version")) {
             //send version
             sender.sendMessage(plugin.config.prefix + ChatColor.GREEN + plugin.getDescription().getVersion());
         } else if (args[0].toLowerCase().equals("help")) {
@@ -43,6 +43,7 @@ public class GUIWhoisCommands implements CommandExecutor {
 
             helpMsg.add(ChatColor.GREEN + "/guiwhois [player]:" + ChatColor.RESET + " Opens the Whois Menu for Player");
             helpMsg.add(ChatColor.GREEN + "/guiwhois reload:" + ChatColor.RESET + " Reloads Config");
+            helpMsg.add(ChatColor.GREEN + "/guiwhois version:" + ChatColor.RESET + " Show GUIWhois Version Number");
             helpMsg.add(ChatColor.GREEN + "/guiwhois help:" + ChatColor.RESET + " Brings up this menu");
 
             helpMsg.add(ChatColor.GOLD + "-----------------GUIWhois-----------------");
