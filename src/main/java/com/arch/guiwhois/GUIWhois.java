@@ -22,6 +22,7 @@ public class GUIWhois extends JavaPlugin {
 
         //setup commands
         this.getCommand("guiwhois").setExecutor(new GUIWhoisCommands(this));
+        this.getCommand("guiwhois").setTabCompleter(new TabComplete());
     }
 
     @Override
