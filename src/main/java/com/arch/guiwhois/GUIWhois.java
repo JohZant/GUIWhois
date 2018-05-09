@@ -1,7 +1,5 @@
 package com.arch.guiwhois;
 
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class GUIWhois extends JavaPlugin {
@@ -22,7 +20,7 @@ public class GUIWhois extends JavaPlugin {
 
         //setup commands
         this.getCommand("guiwhois").setExecutor(new GUIWhoisCommands(this));
-        this.getCommand("guiwhois").setTabCompleter(new TabComplete());
+        this.getCommand("guiwhois").setTabCompleter(new TabComplete());//tab complete
     }
 
     @Override
