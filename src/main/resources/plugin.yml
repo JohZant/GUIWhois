@@ -1,3 +1,7 @@
 name: GUIWhois
-version: 0.0.1
+version: 0.0.2
+author: JohZant
 main: com.arch.guiwhois.GUIWhois
+commands:
+   guiwhois:
+      description: GUIWhois Base Command
