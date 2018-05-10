@@ -1,5 +1,5 @@
 name: GUIWhois
-version: 0.0.2
+version: 0.0.3
 author: JohZant
 main: com.arch.guiwhois.GUIWhois
 commands:

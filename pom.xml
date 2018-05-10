@@ -6,7 +6,7 @@
 
     <groupId>com.arch</groupId>
     <artifactId>GUIWhois</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
 
 
     <repositories>
